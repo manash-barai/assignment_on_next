@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState('Photos');
@@ -17,10 +18,9 @@ const Gallery = () => {
   ];
 
   const videos = [
-    '/images/video1.png',
-    '/images/video2.png',
-    '/images/video3.png',
-    '/images/video4.png',
+    '/images/zak.png',
+    '/images/tur.png',
+    '/images/zak.png',
   ];
 
   return (
@@ -45,7 +45,7 @@ const Gallery = () => {
         <div className='w-[700px] overflow-hidden mx-auto mt-32'>
 
         
-      <div className="flex flex-wrap gap-3">
+      <div key={activeTab} className="flex flex-wrap gap-3 textAnimation">
         {activeTab === 'Photos' ? (
           photos.map((src, index) => (
             <div key={index} className="">
@@ -54,8 +54,8 @@ const Gallery = () => {
           ))
         ) : (
           videos.map((src, index) => (
-            <div key={index} className="">
-              <Image src={src} alt={`Video ${index + 1}`} width={150} height={150} />
+            <div key={index} className=" relative h-[400px] w-[200px]">
+              <Image src={src} alt={`Video ${index + 1}`} layout='fill' objectFit='center' />
             </div>
           ))
         )}
