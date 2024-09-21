@@ -43,11 +43,11 @@ const HalfCircleCarousel = () => {
       </div>
 
       <div className="relative top-96">
-        <button className="previous top-8" onClick={handlePrevious}>
-          {" <-"}
+        <button className="previous top-3" onClick={handlePrevious}>
+        <Image src={'/images/left.png'  } alt='' width={15} height={15}/>
         </button>
-        <button className="next top-8" onClick={handleNext}>
-          {"->"}
+        <button className="next top-6" onClick={handleNext}>
+        <Image src={'/images/right.png'  } alt='' width={15} height={15}/>
         </button>
       </div>
       <div

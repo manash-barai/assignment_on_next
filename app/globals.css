@@ -36,3 +36,29 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+.gallery-container {
+ 
+  border-radius: 50%;
+  width: 98%;
+  border: 1px solid rgb(96, 94, 132);
+    box-shadow: 5px 7px 20px 0px inset rgb(68, 68, 89);
+  height:1600px;
+
+}
+
+
+.carousel-slide {
+  transition: transform 0.5s ease-in-out; /* Transition time should match the setTimeout duration */
+}
+
+.carousel-slide.slide {
+  transform: translateX(-100%); /* Moves the content out of view for a smooth sliding effect */
+}
+
+.homeFill{
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+ 
+}

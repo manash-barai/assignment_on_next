@@ -2,9 +2,9 @@
 .circle {
     width: 1000px;
     height: 1000px;
-    border: 1px solid rgb(96, 94, 132);
     background: #161629;
     border-radius: 50%;
+    border: 1px solid rgb(96, 94, 132);
     box-shadow: 5px 7px 20px 0px inset rgb(68, 68, 89);
   
     margin: auto;
