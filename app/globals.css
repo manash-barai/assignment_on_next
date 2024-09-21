@@ -30,3 +30,9 @@ body {
     text-wrap: balance;
   }
 }
+.midddleImage{
+  background-image: url('/images/Vector 248.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
